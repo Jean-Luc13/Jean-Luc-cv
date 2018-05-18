@@ -1,62 +1,143 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>CV</title>
-    <link rel="stylesheet" href="style.css" media="screen">
-    <!--<link rel="stylesheet" href="skeleton\css\skeleton.css" media="screen">-->
-  </head>
-  <body>
-    <header id="webheader">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jean-Luc CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  
+      $(window).on('scroll', function() {
+          if($(window).scrollTop()) {
+              $('nav').addClass('black');
+          }
+          else {
+              $('nav').removeClass('black');
+          }
+      })
+  </script>
+</head>
+
+<body>
+  <!-- Sticky animated navbar -->
+  <div class="wrapper">
+    <nav>
+      <div class="logo">JL</div>
+      <ul>
+        <li><a class="btn" href="">Home</a></li>
+        <li><a class="btn" href="#section-a">About Me</a></li>
+        <li><a class="btn" href="#section-c">Education</a></li>
+        <li><a class="btn" href="#section-b">Skills</a></li>
+        <li><a class="btn" href="#section-d">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Header Showcase -->
+  <header id="showcase" class="grid">
+    <div class="bg-image"></div>
+    <div class="content-wrap">
       <h1>Jean-Luc Joubert</h1>
+      <p>My name is Jean-luc Joubert. I enjoy being around people, and consider myself a fun person to be around. A few of my passions are astronomy and climbing.</p>
+      
+    </div>
+  </header>
+
+  <!-- Main Area -->
+  <main id="main">
+    <!-- Section A -->
+    <section id="section-a" class="grid">
+      <div class="bg-image1"></div>
+      <div class="content-wrap">
+        <h2 class="content-title">Who is Jean-Luc</h2>
+        <div class="content-text">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit facilis possimus delectus provident fugiat iusto
+             non aperiam dolor dolorem cupiditate, ut eius assumenda laborum aut ipsam optio alias labore quae. Debitis inventore
+             accusamus nisi explicabo! Perferendis aliquid id velit error.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio minima quasi, architecto laborum repellendus aliquid suscipit atque consequatur, provident quas magni cupiditate, illum dolorum odit? Placeat neque voluptas alias omnis.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, exercitationem eligendi ipsa qui itaque repellat fugit, perspiciatis error nisi magnam cumque placeat possimus eveniet voluptas totam rerum consequuntur, ut iure?0</p>
+
+          </div>
+      </div>
+    </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="grid">
+      <div class="content-wrap">
+        <h2 class="content-title">I Am Amazing</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ipsum placeat quas inventore fugit esse labore, vel voluptatibus atque tempora?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit facilis possimus delectus provident fugiat iusto
+            non aperiam dolor dolorem cupiditate, ut eius assumenda laborum aut ipsam optio alias labore quae. Debitis inventore
+            accusamus nisi explicabo! Perferendis aliquid id velit error.</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio minima quasi, architecto laborum repellendus aliquid suscipit atque consequatur, provident quas magni cupiditate, illum dolorum odit? Placeat neque voluptas alias omnis.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, exercitationem eligendi ipsa qui itaque repellat fugit, perspiciatis error nisi magnam cumque placeat possimus eveniet voluptas totam rerum consequuntur, ut iure?0</p>
+
+      </div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="grid">
+      <div class="content-wrap">
+          <h2 class="content-title">Skills</h2>
+      </div>
+      
       <ul>
-        <li><a href="">About</a></li>
-        <li><a href="">Education</a></li>
-        <li><a href="">Experience</a></li>
-        <li><a href="">Contact</a></li>
+        <li>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Web Development</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente maiores corporis harum beatae repellat
+                nostrum quisquam facere odit minus.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/261628/pexels-photo-261628.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Mobile Applications</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente maiores corporis harum beatae repellat
+                nostrum quisquam facere odit minus.</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card">
+            <img src="https://images.pexels.com/photos/574077/pexels-photo-574077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+            <div class="card-content">
+              <h3 class="card-title">Back End</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sapiente maiores corporis harum beatae repellat
+                nostrum quisquam facere odit minus.</p>
+            </div>
+          </div>
+        </li>
       </ul>
-    </header>
+    </section>
 
-    <article id="sitearticle">
-      <h2>About</h2>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-      <p>"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"</p>
-    </article>
+    <!-- Section D -->
+    <section id="section-d" class="grid">
+      <div class="box">
+        <h2 class="content-title">Contact Me</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim, esse. Similique eaque corrupti neque, dolorem expedita ex perferendis atque modi.</p>
+        <p>jeanljoubert@gmail.com</p>  
+      </div>
+      <!-- <div class="box">
+        <h2 class="content-title">About Me</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora minus unde, aspernatur ea debitis inventore asperiores, laborum iusto vero expedita id? Mollitia minima sunt illum dignissimos dolorum. Earum, reiciendis.</p>
+      </div> -->
+    </section>
+  </main>
 
-    <nav  id="siteedu">
-      <h2>Education</h2>
-      <ul>
-        <li>Tertiary</li>
-        <li>Secondary</li>
-      </ul>
+  <!-- Footer
+  <footer id="main-footer" class="grid">
+    <div>Jean-Luc</div>
+    <div>Project by <a href="http://traversymedia.com"
+      target="_blank">Traversy Media</a></div>
+  </footer> -->
+</body>
 
-    </nav>
-    <nav id="siteexp">
-      <h2>Experience/skills</h2>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-        <li>4</li>
-        <li>5</li>
-      </ul>
-
-    </nav>
-
-    <footer id="webfooter">
-      <h2>Contact</h2>
-        <ul>
-          <li><a href="Email">Email</a></li>
-          <li></li>
-        </ul>
-    </footer>
-
-</div>
-
-  </body>
 </html>
