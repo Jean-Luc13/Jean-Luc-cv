@@ -7,18 +7,32 @@
   <title>Jean-Luc CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500">
+  <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:500"> -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script type="text/javascript">
-  
-      $(window).on('scroll', function() {
-          if($(window).scrollTop()) {
-              $('nav').addClass('black');
-          }
-          else {
-              $('nav').removeClass('black');
-          }
-      })
+
+    // Menu toggle-button
+
+    $(document).ready(function() {
+      $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+      });
+    });
+
+    // Scrolling Effect
+
+    $(window).on("scroll", function() {
+      if($(window).scrollTop()) {
+        $('nav').addClass('black');
+      }
+      else {
+        $('nav').removeClass('black');
+      }
+    })
+
+      
   </script>
 </head>
 
@@ -26,14 +40,21 @@
   <!-- Sticky animated navbar -->
   <div class="wrapper">
     <nav>
-      <div class="logo">JL</div>
-      <ul>
-        <li><a class="btn" href="">Home</a></li>
-        <li><a class="btn" href="#section-a">About Me</a></li>
-        <li><a class="btn" href="#section-c">Education</a></li>
-        <li><a class="btn" href="#section-b">Skills</a></li>
-        <li><a class="btn" href="#section-d">Contact</a></li>
-      </ul>
+      <div class="menu-icon">
+        <i class="fa fa-bars f-2x"></i>
+      </div>
+      <div class="logo">
+        JL
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a class="btn" href="">Home</a></li>
+          <li><a class="btn" href="#section-a">About Me</a></li>
+          <li><a class="btn" href="#section-c">Education</a></li>
+          <li><a class="btn" href="#section-b">Skills</a></li>
+          <li><a class="btn" href="#section-d">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <!-- Header Showcase -->
