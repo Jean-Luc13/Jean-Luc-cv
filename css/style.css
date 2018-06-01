@@ -2,16 +2,21 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background: #333;
-  color: #fff;
+  background: #747474;
+  color: #dadada;
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center; }
+  body .img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
-img {
-  display: block;
-  width: 100%;
-  height: auto; }
+.icons {
+  grid-column: span 4;
+  background: #747474; }
+  .icons img {
+    padding: 4em 6em 4em 6em; }
 
 h1, h2, h3 {
   margin: 0;
@@ -31,7 +36,7 @@ p {
   position: fixed;
   float: left;
   margin: 16px 36px;
-  color: #fff;
+  color: #dadada;
   font-weight: bold;
   font-size: 24px; }
 
@@ -41,16 +46,16 @@ nav {
 
 nav ul {
   list-style: none;
-  background: rgba(0, 0, 0, 0);
+  background: black;
   overflow: hidden;
-  color: #fff;
+  color: #dadada;
   padding: 0;
   text-align: center;
   margin: 0;
   transition: 1s; }
 
 nav.black ul {
-  background: #000; }
+  background: black; }
 
 nav ul li {
   display: inline-block;
@@ -58,16 +63,16 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #dadada;
   font-size: 20px; }
 
 .menu-icon {
   width: 100%;
-  background: #000;
+  background: black;
   text-align: right;
   padding: 15px 24px;
   cursor: pointer;
-  color: #fff;
+  color: #dadada;
   display: none; }
 
 @media (max-width: 700px) {
@@ -78,15 +83,16 @@ nav ul li a {
 
   nav ul {
     max-height: 0px;
-    background: #000; }
+    background: black; }
 
   nav.black ul {
-    background: #000; }
+    background: black; }
 
   .showing {
-    max-height: 20em; }
+    max-height: 35em; }
 
   nav ul li {
+    display: block;
     box-sizing: border-box;
     width: 100%;
     padding: 24px 0;
@@ -97,12 +103,12 @@ nav ul li a {
 /* Header Showcase */
 #showcase {
   min-height: 600px;
-  color: #fff;
+  color: #dadada;
   text-align: center; }
 
 #showcase .bg-image {
   position: absolute;
-  background: #333 url("../images/lions_head.jpeg");
+  background: #747474 url("../images/lions_head.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,7 +119,7 @@ nav ul li a {
 
 #section-a .bg-image1 {
   position: absolute;
-  background: #333 url("../images/climb.jpg");
+  background: #747474 url("../images/climb.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,25 +154,37 @@ nav ul li a {
 
 #section-b li {
   margin-bottom: 1em;
-  background: #fff;
-  color: #333; }
+  background: #dadada;
+  color: #747474; }
 
 .card-content {
   padding: 1.5em; }
 
 /* Section C */
 #section-c {
-  background: #fff;
-  color: #333;
+  background: #dadada;
+  color: #747474;
   padding: 2em; }
 
 /* Section D / Boxes */
 #section-d .box {
   padding: 2em;
-  color: #fff; }
+  color: #dadada; }
 
 #section-d .box:first-child {
   background: #2690d4; }
+
+.tert {
+  display: block;
+  list-style: none; }
+  .tert li {
+    text-align: start; }
+
+.secondary {
+  text-decoration: underline; }
+
+.tertiary {
+  text-decoration: underline; }
 
 /* Media Queries */
 @media (min-width: 700px) {
