@@ -17,14 +17,14 @@
     // Menu toggle-button
 
     $(document).ready(function() {
-      $(".menu-icon").on("mouseover", function() {
+      $(".menu-icon").on("click", function() {
         $("nav ul").toggleClass("showing");
       });
     });
 
 
     $(document).ready(function() {
-      $(".menu-icon").on("mouseout", function() {
+      $("nav li").on("click", function() {
         $("nav ul").removeClass("showing");
       });
     });
@@ -59,8 +59,8 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a class="btn" href="">Home</a></li>
-          <li><a class="btn" href="#section-a">About Me</a></li>
+          <li><a class="btn" href="">About Me</a></li>
+          <li><a class="btn" href="#section-a">Work</a></li>
           <li><a class="btn" href="#section-c">Education</a></li>
           <li><a class="btn" href="#section-b">Skills</a></li>
           <li><a class="btn" href="#section-d">Contact</a></li>
@@ -88,8 +88,25 @@
     <section id="section-a" class="grid">
       <div class="bg-image1"></div>
       <div class="content-wrap">
-        <h2 class="content-title">Who is Jean-Luc</h2>
+        <h2 class="content-title">Work</h2>
         <div class="content-text">
+            <div class="one">
+                <ul class="tert">
+                  <li>
+                    <p>Company: <a href="https://maverickpackaging.co.za/"> Maverick Packaging</a></p>
+                  </li>
+                  <li>
+                    <p>Position: Quality control and project management</p>
+                  </li>
+                  <li>
+                    <p>Duration of service: 2014-2015</p>
+                  </li>
+                  <li>
+                    <p>Duties: Oversee the production and quality of production line for
+                        overseas export</p>
+                  </li>
+                </ul>
+              </div>
           
           </div>
       </div>

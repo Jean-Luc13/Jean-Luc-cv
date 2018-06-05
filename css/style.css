@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: #747474;
-  color: #dadada;
+  color: black;
   font-size: 1.1em;
   line-height: 1.5;
   text-align: center; }
@@ -103,7 +103,7 @@ nav ul li a {
 /* Header Showcase */
 #showcase {
   min-height: 670px;
-  color: #dadada;
+  color: black;
   text-align: center; }
 
 #showcase .bg-image {
@@ -118,10 +118,7 @@ nav ul li a {
 
 #section-a .bg-image1 {
   position: absolute;
-  background: #747474 url("../images/climb.jpg");
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   padding-bottom: 4em;
   padding-top: 0;
   width: 100%;
@@ -159,14 +156,14 @@ nav ul li a {
 
 /* Section C */
 #section-c {
-  background: #dadada;
-  color: #747474;
+  background: #2690d4;
+  color: black;
   padding: 2em; }
 
 /* Section D / Boxes */
 #section-d .box {
   padding: 2em;
-  color: #dadada; }
+  color: black; }
 
 #section-d .box:first-child {
   background: #2690d4; }

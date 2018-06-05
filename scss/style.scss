@@ -2,7 +2,8 @@
 $bgColor: rgb(116, 116, 116);
 $textColor: rgb(218, 218, 218);
 $btnHoverColor: rgb(38, 144, 212);
-$navBgColor: rgb(0, 0, 0); 
+$navBgColor: rgb(0, 0, 0);
+$bodyText: rgb(0, 0, 0); 
 
 /* Core Styles */
 
@@ -10,7 +11,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background: $bgColor;
-    color: $textColor;
+    color: $bodyText;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: center;
@@ -146,7 +147,7 @@ nav ul li a {
 
 #showcase {
     min-height: 670px;
-    color: $textColor;
+    color: $bodyText;
     text-align: center;
 }
 
@@ -164,10 +165,10 @@ nav ul li a {
 
 #section-a .bg-image1 {
     position: absolute;
-    background: $bgColor url('../images/climb.jpg');
+    // background: $bgColor url('../images/climb.jpg');
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     padding-bottom: 4em;
     padding-top: 0;
     width: 100%;
@@ -220,8 +221,8 @@ nav ul li a {
 /* Section C */
 
 #section-c {
-    background: $textColor;
-    color: $bgColor;
+    background: $btnHoverColor;
+    color: $bodyText;
     padding: 2em;
 }
 
@@ -229,7 +230,7 @@ nav ul li a {
 
 #section-d .box {
     padding: 2em;
-    color: $textColor;
+    color: $bodyText;
 }
 
 #section-d .box:first-child {
