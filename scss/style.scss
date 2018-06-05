@@ -75,7 +75,7 @@ nav ul {
     overflow: hidden;
     color: $textColor;
     padding: 0;
-    text-align: center;
+    text-align: right;
     margin: 0;
     transition: 1s;
 }
@@ -148,7 +148,7 @@ nav ul li a {
 #showcase {
     min-height: 670px;
     color: $bodyText;
-    text-align: center;
+    text-align: left;
 }
 
 #showcase .bg-image {
@@ -270,6 +270,10 @@ nav ul li a {
     .content-wrap,
     #section-b ul {
         grid-column: 2/4;
+    }
+    .content-wrap1 {
+        grid-column: 1/3;
+        padding: 5em;
     }
 
     .box {
