@@ -18,9 +18,9 @@ body {
   .icons img {
     padding: 4em 6em 4em 6em; }
 
-h1, h2, h3 {
+h1, h2 {
   margin: 0;
-  padding: 1em 0; }
+  padding: 2em 0 0; }
 
 p {
   margin: 0;
@@ -102,7 +102,7 @@ nav ul li a {
     display: block; } }
 /* Header Showcase */
 #showcase {
-  min-height: 600px;
+  min-height: 670px;
   color: #dadada;
   text-align: center; }
 
@@ -113,9 +113,8 @@ nav ul li a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 600px;
-  z-index: -1;
-  opacity: 0.4; }
+  height: 670px;
+  z-index: -1; }
 
 #section-a .bg-image1 {
   position: absolute;
@@ -126,9 +125,8 @@ nav ul li a {
   padding-bottom: 4em;
   padding-top: 0;
   width: 100%;
-  height: 600px;
-  z-index: -1;
-  opacity: 0.4; }
+  height: 670px;
+  z-index: -1; }
 
 #showcase h1 {
   padding-top: 100px;
@@ -136,16 +134,15 @@ nav ul li a {
 
 #showcase .content-wrap,
 #section-a .content-wrap {
-  padding: 0 1.5em; }
+  padding: 1.5em 1.5em; }
 
 /* Section A */
 #section-a {
-  padding: 2em;
-  height: 600px; }
+  height: 670px; }
 
 /* Section B */
 #section-b {
-  padding: 2em 1em 1em; }
+  padding: 2em 1em 4.5em; }
 
 #section-b ul {
   list-style: none;
