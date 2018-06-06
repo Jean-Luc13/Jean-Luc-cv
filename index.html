@@ -7,11 +7,15 @@
   <title>Jean-Luc CV</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script defer src="/fontawesome-all.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
   <script type="text/javascript">
 
     // Menu toggle-button
@@ -43,6 +47,29 @@
       }
     })
 
+      $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: true
+        },
+        600: {
+          items: 3,
+          nav: false
+        },
+        1000: {
+          items: 5,
+          nav: true,
+          loop: false
+        }
+      }
+    })
+  });
+
       
   </script>
 </head>
@@ -61,7 +88,8 @@
         <ul>
           <li><a class="btn" href="">About Me</a></li>
           <li><a class="btn" href="#section-a">Work</a></li>
-          <li><a class="btn" href="#section-c">Education</a></li>
+          <li><a class="btn" href="#section-a">Education</a></li>
+          <li><a class="btn" href="#section-1">Portfolio</a></li>
           <li><a class="btn" href="#section-b">Skills</a></li>
           <li><a class="btn" href="#section-d">Contact</a></li>
         </ul>
@@ -94,7 +122,7 @@
             <div class="one">
                 <ul class="tert">
                   <li>
-                    <p>Company: <a href="http://cityrock.co.za/"> CityROCK</a></p>
+                    <p>Company: <a href="http://cityrock.co.za/" target="_blank"> CityROCK</a></p>
                   </li>
                   <li>
                     <p>Position: This position is responsible for overseeing all aspects of the routes set on the climbing wall, this includes, but is not limited to: developing route setting staff, maintaining equipment, ensuring route quality, and making sure setting equipment is organized.</p>
@@ -111,7 +139,7 @@
             <div class="one">
                 <ul class="tert">
                   <li>
-                    <p>Company: <a href="https://maverickpackaging.co.za/"> Maverick Packaging</a></p>
+                    <p>Company: <a href="https://maverickpackaging.co.za/" target="_blank"> Maverick Packaging</a></p>
                   </li>
                   <li>
                     <p>Position: Quality control and project management</p>
@@ -128,17 +156,13 @@
           
           </div>
       </div>
-    </section>
-
-    <!-- Section C -->
-    <section id="section-c" class="grid">
-      <div class="content-wrap">
-        <h2 class="content-title">Education</h2>
+      <div class="content-wrap1">
+        <h2 class="content-title1">Education</h2>
         <div class="one">
         <h3 class="tertiary">Tertiary Education</h3>
         <ul class="tert">
           <li>
-            <p>Institution: <a href="http://codespace.co.za/"> CodeSpace</a></p>
+            <p>Institution: <a href="http://codespace.co.za/" target="_blank"> CodeSpace</a></p>
           </li>
           <li>
             <p>Year: 2018</p>
@@ -156,10 +180,12 @@
           </li>
         </ul>
       </div>
+      </div>
+      <div class="content-wrap2">
       <div class="two"><h3 class="secondary">Secondary Education</h3>
         <ul class="tert">
           <li>
-            <p>School: Progress College</p>
+            <p>School: <a href="https://www.rosebankprogresscollege.co.za/index.php" target="_blank"> Progress College</a></p>
           </li>
           <li>
             <p>Year: 2007</p>
@@ -169,26 +195,85 @@
           </li>
         </ul>
         </div>
-        
-        
       </div>
+        
+        
+      
     </section>
+
+<!--section B-->
+<section id="section-1" id="portfolio-grid">
+  <div id="portfolio-wrap">
+    <h2 class="content-title">PORTFOLIO</h2>
+    <ul>
+      <!-- <li>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Rebuild of Jon Chretien Website</h3>
+            <p>Recreate the site as closely as possible to the original using my own html and css.</p>
+          </div>
+        </div>
+      </li> -->
+      <li>
+        <div class="card">
+          <img src="images/800px-SN1994D.jpg" alt="">
+          <div class="card-content">
+            <h3 class="card-title">
+              <a href="https://jean-luc13.github.io/quiz/questionnaire.html" target="_blank">Create a quiz</a>
+            </h3>
+            <p>Created a quiz using javascript functions, loops and arrays.</p>
+          </div>
+        </div>
+      </li>
+      <!-- <li>
+        <div class="card">
+          <img src="" alt="">
+          <div class="card-content">
+            <h3 class="card-title">Create a blog</h3>
+            <p>Created a fucntional blog using Jquery, JSON mock server and AJAX.</p>
+          </div>
+        </div>
+      </li> -->
+    </ul>
+  </div>
 
     <!-- Section B -->
     <section id="section-b" class="grid">
       <div class="content-wrap">
           <h2 class="content-title">Skills</h2>
-      </div>
-      <div class="icons">
-        <img class="" src="/images/icons8-html-5.svg">
-        <img class="" src="/images/icons8-css3.svg">
-        <img class="" src="/images/icons8-javascript.svg">
-        <img class="" src="/images/icons8-jquery-filled (2).svg">
-        <img class="" src="/images/sass.svg">
-        <img class="" src="/images/icons8-mysql-logo-filled.svg">
-        <img class="" src="/images/icons8-nodejs.svg">
-        <img class="" src="/images/react.svg">
-      </div>
+          <div class="owl-carousel">
+            <div class="font-icon greyscale">
+              <i class="devicon-css3-plain-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-express-original-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-github-plain-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-html5-plain-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-javascript-plain"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-jquery-plain-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-mongodb-plain-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-nodejs-plain-wordmark"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-sass-original"></i>
+            </div>
+            <div class="font-icon greyscale">
+              <i class="devicon-visualstudio-plain-wordmark"></i>
+            </div>
+      
     </section>
 
     <!-- Section D -->
@@ -203,7 +288,7 @@
     </section>
   </main>
 
-  
 </body>
+
 
 </html>
