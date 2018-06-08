@@ -197,6 +197,12 @@ nav ul li a {
 .tertiary {
   text-decoration: underline; }
 
+.owl-nav {
+  font-size: 50px; }
+
+.font-icon {
+  font-size: 100px; }
+
 /* Media Queries */
 @media (min-width: 700px) {
   .grid {
