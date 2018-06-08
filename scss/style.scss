@@ -156,7 +156,7 @@ nav ul li a {
 
 #showcase .bg-image {
     position: absolute;
-    background: $bgColor url('../images/cvpic.jpg');
+    background:url('../images/cvpic.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -164,7 +164,7 @@ nav ul li a {
     height: 1080px;
     z-index: -1;
     
-    // opacity: 0.4;
+    // opacity: 0.2;
 }
 
 #section-a .bg-image1 {
