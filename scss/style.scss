@@ -150,7 +150,7 @@ nav ul li a {
     color: $bodyText;
     text-align: left;
     .content-wrap1 {
-        grid-column: 1;
+        grid-column: 4;
     }
 }
 
@@ -163,8 +163,8 @@ nav ul li a {
     width: 100%;
     height: 1080px;
     z-index: -1;
+    filter: brightness(70%) 
     
-    // opacity: 0.2;
 }
 
 #section-a .bg-image1 {
@@ -322,6 +322,7 @@ nav ul li a {
 
     .content-wrap,
     #section-b ul {
+        padding: 1.5em 1.5em;
         grid-column: span 4;
     }
     .owl-nav {
@@ -368,6 +369,11 @@ nav ul li a {
                     }
               }
         }
+  }
+  #section-d {
+      h2 {
+          background: $bgColor;
+      }
   }
   #portfolio-wrap {
       display: grid;

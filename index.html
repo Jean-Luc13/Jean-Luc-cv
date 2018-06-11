@@ -52,6 +52,9 @@
       loop: true,
       margin: 10,
       responsiveClass: true,
+      autoplay: true,
+      autoplayTimeout: 1500,
+      autoplayHoverPause: false,
       responsive: {
         0: {
           items: 1,
@@ -59,12 +62,12 @@
         },
         600: {
           items: 3,
-          nav: false
+          nav: true
         },
         1000: {
           items: 5,
           nav: true,
-          loop: false
+          loop: true
         }
       }
     })
@@ -86,7 +89,7 @@
       </div>
       <div class="menu">
         <ul>
-          <li><a class="btn" href="">About Me</a></li>
+          <li><a class="btn" href="">Home</a></li>
           <li><a class="btn" href="#section-b">Skills</a></li>
           <li><a class="btn" href="#section-a">Work & Education</a></li>
           <!-- <li><a class="btn" href="#section-a">Education</a></li> -->
@@ -122,9 +125,9 @@
               <div class="font-icon greyscale">
                 <i class="devicon-css3-plain-wordmark"></i>
               </div>
-              <div class="font-icon greyscale">
+              <!-- <div class="font-icon greyscale">
                 <i class="devicon-express-original-wordmark"></i>
-              </div>
+              </div> -->
               <div class="font-icon greyscale">
                 <i class="devicon-github-plain-wordmark"></i>
               </div>
@@ -275,7 +278,7 @@
             <h3 class="card-title">
               <a href="https://jean-luc13.github.io/blog/index.html" target="_blank">Create a blog</a>
             </h3>
-            <p>Created a functional blog using Jquery, JSON mock server and AJAX.</p>
+            <p>Created a functional and responsive blog using Jquery, JSON mock server and AJAX.</p>
           </div>
         </div>
       </li>
@@ -290,7 +293,7 @@
         <h2 class="content-title">Contact Me</h2>
         <ul>
           <li><img src="/images/phone.svg" class="phone"><p>072 929 8046</p></li>
-          <li><img src="/images/envelope.svg" class="mail"><address><a href="mailto:jeanljoubert@gmail.com">Jean-Luc Joubert</a></address></li>
+          <li><a href="mailto:jeanljoubert@gmail.com"><img src="/images/envelope.svg" class="mail"></a><address><a href="mailto:jeanljoubert@gmail.com">Jean-Luc Joubert</a></address></li>
         </ul>
          
       </div>
