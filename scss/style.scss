@@ -30,12 +30,15 @@ body {
     img {
 
         padding: 4em 6em 4em 6em;
+
     }
+    
 }
+
 
 h1, h2  {
     margin: 0;
-    padding: 2em 0 0;
+    padding: 1em 0 0;
     
 }
 
@@ -136,9 +139,23 @@ nav ul li a {
     .menu-icon {
         display: block;
     }
+   
+    
     }
 
-
+    #section-d .box {
+        // padding: 2em;
+        color: $bodyText;
+        
+        ul li {
+            display: inline-block;
+            
+            .mail,
+            .phone {
+                padding-top: 1em;
+            }
+        }
+    }
 
 
 
@@ -163,7 +180,7 @@ nav ul li a {
     width: 100%;
     height: 1080px;
     z-index: -1;
-    filter: brightness(70%) 
+    filter: brightness(70%); 
     
 }
 
@@ -196,7 +213,10 @@ nav ul li a {
     grid-column: 1/3;
     // color: $textColor;
 }
-
+#section-a .content-title,
+#section-a .content-title1 {
+    padding-top: 1.5em;
+}
 
 #section-a .content-wrap1 {
     grid-column: 3/5;
@@ -216,7 +236,7 @@ nav ul li a {
 /* Section B */
 
 #section-b {
-    padding-top: 1em;
+    // padding-top: 1em;
     background: $btnHoverColor;
 }
 
@@ -253,19 +273,49 @@ nav ul li a {
 
 /* Section D / Boxes */
 
-#section-d .box {
-    // padding: 2em;
-    color: $bodyText;
+// #section-d .box {
+//     // padding: 2em;
+//     color: $bodyText;
+//     .content-title {
+//         font-weight: normal;
+//         padding-left: 3em;
+//         padding-top: 0.1em;
+//         font-size: 1.3em;
+//         display: inline-block;
+//         float: left;
+//         grid-column: 1;
+//     }
     
-    ul li {
-        display: inline-block;
+//     ul { 
+       
+//         li {
+//             display: inline-block;
+//             // text-align: center;
+
         
-        .mail,
-        .phone {
-            padding-top: 1em;
-        }
-    }
-}
+//         p {
+//             padding-right: 6em;
+//             margin-left: 11em;
+        
+//         }
+//         address{
+//             padding-left: 10em;
+//             margin-right: 5em;
+//         }
+        
+//         .mail{
+//             height: 1.2em;;
+//             padding-right: 1em;
+//             padding-left: 1em;
+//         }
+//         .phone {
+//             padding-top: 0.2em;
+//             height: 1.2em;
+//             padding-right: 1em;
+//         }
+//     }
+//   }
+// }
 
 #section-d .box:first-child {
     background: $bgColor;
@@ -300,6 +350,8 @@ nav ul li a {
 .font-icon {
     font-size: 100px;
 }
+.animated {    
+    animation: infinite jello;}
 
 /* Media Queries */
 
@@ -311,6 +363,9 @@ nav ul li a {
     }
     #showcase p {
         color: $bodyText;
+    }
+    #showcase .bg-image {
+        filter: brightness(70%);
     }
 
     #section-a .content-text p {
@@ -328,6 +383,8 @@ nav ul li a {
     .owl-nav {
         font-size: 50px;
     }
+    .animated {    
+        animation: infinite jello;}
     .font-icon {
         font-size: 100px;
     }
@@ -340,6 +397,10 @@ nav ul li a {
         grid-column: span 4;
     }
 
+    #section-b h2 {
+        margin-bottom: 1em;
+        margin-top: 0.7em;
+    }
     #section-b ul {
         display: flex;
         justify-content: space-around;
@@ -370,9 +431,56 @@ nav ul li a {
               }
         }
   }
+
+  #section-d .box {
+    // padding: 2em;
+    color: $bodyText;
+    .content-title {
+        font-weight: normal;
+        padding-left: 3em;
+        padding-top: 0.1em;
+        font-size: 1.3em;
+        display: inline-block;
+        float: left;
+        grid-column: 1;
+    }
+    
+    ul { 
+       
+        li {
+            display: inline-block;
+            // text-align: center;
+
+        
+        p {
+            padding-right: 6em;
+            margin-left: 11em;
+        
+        }
+        address{
+            padding-left: 10em;
+            margin-right: 5em;
+        }
+        
+        .mail{
+            height: 1.2em;;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+        .phone {
+            padding-top: 0.2em;
+            height: 1.2em;
+            padding-right: 1em;
+        }
+    }
+  }
+}
   #section-d {
       h2 {
           background: $bgColor;
+          padding-top: 0;
+          text-align: left;
+          width: 150px;
       }
   }
   #portfolio-wrap {
