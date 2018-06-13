@@ -38,7 +38,7 @@ body {
 
 h1, h2  {
     margin: 0;
-    padding: 1em 0 0;
+    padding: 2em 0 0;
     
 }
 
@@ -215,7 +215,7 @@ nav ul li a {
 }
 #section-a .content-title,
 #section-a .content-title1 {
-    padding-top: 1.5em;
+    padding-top: 2em;
 }
 
 #section-a .content-wrap1 {
@@ -353,7 +353,7 @@ nav ul li a {
 .animated {    
     animation: infinite jello;}
 
-/* Media Queries */
+/* Media Queries ********************************************************************************* */
 
 @media(min-width: 700px) {
     .grid {
@@ -397,10 +397,10 @@ nav ul li a {
         grid-column: span 4;
     }
 
-    #section-b h2 {
-        margin-bottom: 1em;
-        margin-top: 0.7em;
-    }
+    // #section-b h2 {
+    //     margin-bottom: 1em;
+    //     margin-top: 0.7em;
+    // }
     #section-b ul {
         display: flex;
         justify-content: space-around;
@@ -410,6 +410,12 @@ nav ul li a {
         width: 31%;
     }
    
+    h1, h2  {
+        margin: 0;
+        padding: 1.5em 0 0;
+        
+    }
+
    #section-1{
        h2 {
            background: $btnHoverColor;
@@ -499,5 +505,9 @@ nav ul li a {
 }
   .card3 {
       grid-column: 3;
-}    
+}  
+    #section-a .content-title,
+    #section-a .content-title1 {
+        padding-top: 1.5em;
+    }  
 }

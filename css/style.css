@@ -19,7 +19,7 @@ body {
 
 h1, h2 {
   margin: 0;
-  padding: 1em 0 0; }
+  padding: 2em 0 0; }
 
 p {
   margin: 0;
@@ -148,7 +148,7 @@ nav ul li a {
 
 #section-a .content-title,
 #section-a .content-title1 {
-  padding-top: 1.5em; }
+  padding-top: 2em; }
 
 #section-a .content-wrap1 {
   grid-column: 3/5; }
@@ -210,7 +210,7 @@ nav ul li a {
 .animated {
   animation: infinite jello; }
 
-/* Media Queries */
+/* Media Queries ********************************************************************************* */
 @media (min-width: 700px) {
   .grid {
     display: grid;
@@ -249,16 +249,16 @@ nav ul li a {
   .box {
     grid-column: span 4; }
 
-  #section-b h2 {
-    margin-bottom: 1em;
-    margin-top: 0.7em; }
-
   #section-b ul {
     display: flex;
     justify-content: space-around; }
 
   #section-b li {
     width: 31%; }
+
+  h1, h2 {
+    margin: 0;
+    padding: 1.5em 0 0; }
 
   #section-1 h2 {
     background: #2690d4; }
@@ -320,6 +320,10 @@ nav ul li a {
     grid-column: 2; }
 
   .card3 {
-    grid-column: 3; } }
+    grid-column: 3; }
+
+  #section-a .content-title,
+  #section-a .content-title1 {
+    padding-top: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
